@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*!
+ Theme Name:   Romber WP Theme
+ Theme URI:    https://andrearomber.com/
+ Description:  Basic theme implementing the romber-theme elements
+ Author:       Andrea Romber
+ Author URI:   https://andrearomber.com/
+ Version:      1.0.0
+ License:      All rights reserved
+ Tags:         custom-menu, custom-logo
+ Text Domain:  romber-theme
+*/
+
+// Global styles
+@import 'styles/styles';
+
+// Template part specific styles
+@import 'template-parts/template-parts';

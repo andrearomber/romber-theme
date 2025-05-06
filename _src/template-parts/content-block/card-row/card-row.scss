@@ -1,0 +1,73 @@
+section.card-row-section {
+    .card-row {
+        border-top: var(--u-border-light);
+        border-bottom: var(--u-border-light);
+        background-color: var(--bg-main-2);
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 3rem 0;
+            gap: 2rem;
+            justify-content: space-between;
+            .cards-medium {
+                flex-basis: 30%;
+                .card-img{
+                    height: 12rem;
+                }
+            }
+            .cards-large {
+                flex-basis: 45%;
+                .card-img{
+                    height: 17rem;
+                }
+            }
+            .card {
+                min-width: 300px;
+                border: var(--u-border-light);
+                border-radius: var(--u-border-radius-lg);
+                // overflow: hidden;
+                box-shadow: var(--u-shadow);
+                background-color: var(--bg-main);
+                a.card-img-link {
+                    display: block;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .card-img{
+                    width: 100%;
+                    border-top-left-radius: var(--u-border-radius-lg);
+                    border-top-right-radius: var(--u-border-radius-lg);
+
+                }
+                .card-text {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1.2rem;
+                    max-height: 15rem;
+                    overflow: hidden;
+                    h3 {
+                        margin: 0;
+                    }
+                }
+                .card-link {
+                    display: flex;
+                    justify-content: end;
+                    padding: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+/* -----------------
+    Breakpointers
+----------------- */
+@include mq("md-down") {
+    section.card-row-section {
+        .card-row .container {
+            flex-direction: column;
+            width: 80%;
+        }
+    }
+}
